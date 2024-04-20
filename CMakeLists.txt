@@ -3,4 +3,6 @@ project(TBG)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(TBG main.cpp)
+add_executable(TBG main.cpp
+        Unit.cpp
+        Game.cpp)
