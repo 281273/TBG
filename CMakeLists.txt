@@ -5,4 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(TBG main.cpp
         Unit.cpp
-        Game.cpp)
+        Game.cpp
+        User.cpp
+        Pc.cpp
+        UnitType.cpp)

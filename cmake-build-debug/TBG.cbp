@@ -88,10 +88,28 @@
 		<Unit filename="D:/Code/C++Projects/TBG/Game.h">
 			<Option target="TBG"/>
 		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/Pc.cpp">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/Pc.h">
+			<Option target="TBG"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/Unit.cpp">
 			<Option target="TBG"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/Unit.h">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/UnitType.cpp">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/UnitType.h">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/User.cpp">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/User.h">
 			<Option target="TBG"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/main.cpp">

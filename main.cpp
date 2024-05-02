@@ -4,8 +4,10 @@
 
 
 int main() {
-    Unit unit;
+    Pc pc; User user; UnitType unittype;
+    Unit unit(unittype,user,pc);
     Game game(unit);
     game.runGame();
     return 0;
 }
+

@@ -6,14 +6,35 @@
 #define TBG_UNIT_H
 
 #include <iostream>
+#include <string>
+
+#include "UnitType.h"
+#include "User.h"
+#include "Pc.h"
+
+
 using namespace std;
 
 
 class Unit {
 public:
-    int getHp();
+    Unit(UnitType& _unittype,User& _user,Pc& _pc);
+
+    float hp;
+    float dmgmulti;
+    string name;
+
+    void SetStats(int typenum);
+
+//    virtual int Attack();
+//    virtual int Heal();
+//    virtual int ChangeUnit();
+//    virtual int Flee();
+
 private:
-    int hp=6;
+    UnitType& unittype; User& user; Pc& pc;
+
+
 };
 
 

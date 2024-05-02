@@ -6,6 +6,8 @@
 #define TBG_GAME_H
 
 #include <iostream>
+#include <string>
+
 #include "Unit.h"
 
 using namespace std;

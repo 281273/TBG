@@ -152,6 +152,30 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
+Pc.obj: Pc.cpp.obj
+.PHONY : Pc.obj
+
+# target to build an object file
+Pc.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Pc.cpp.obj
+.PHONY : Pc.cpp.obj
+
+Pc.i: Pc.cpp.i
+.PHONY : Pc.i
+
+# target to preprocess a source file
+Pc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Pc.cpp.i
+.PHONY : Pc.cpp.i
+
+Pc.s: Pc.cpp.s
+.PHONY : Pc.s
+
+# target to generate assembly for a file
+Pc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Pc.cpp.s
+.PHONY : Pc.cpp.s
+
 Unit.obj: Unit.cpp.obj
 .PHONY : Unit.obj
 
@@ -175,6 +199,54 @@ Unit.s: Unit.cpp.s
 Unit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Unit.cpp.s
 .PHONY : Unit.cpp.s
+
+UnitType.obj: UnitType.cpp.obj
+.PHONY : UnitType.obj
+
+# target to build an object file
+UnitType.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/UnitType.cpp.obj
+.PHONY : UnitType.cpp.obj
+
+UnitType.i: UnitType.cpp.i
+.PHONY : UnitType.i
+
+# target to preprocess a source file
+UnitType.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/UnitType.cpp.i
+.PHONY : UnitType.cpp.i
+
+UnitType.s: UnitType.cpp.s
+.PHONY : UnitType.s
+
+# target to generate assembly for a file
+UnitType.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/UnitType.cpp.s
+.PHONY : UnitType.cpp.s
+
+User.obj: User.cpp.obj
+.PHONY : User.obj
+
+# target to build an object file
+User.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/User.cpp.obj
+.PHONY : User.cpp.obj
+
+User.i: User.cpp.i
+.PHONY : User.i
+
+# target to preprocess a source file
+User.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/User.cpp.i
+.PHONY : User.cpp.i
+
+User.s: User.cpp.s
+.PHONY : User.s
+
+# target to generate assembly for a file
+User.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/User.cpp.s
+.PHONY : User.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -212,9 +284,18 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
+	@echo ... Pc.obj
+	@echo ... Pc.i
+	@echo ... Pc.s
 	@echo ... Unit.obj
 	@echo ... Unit.i
 	@echo ... Unit.s
+	@echo ... UnitType.obj
+	@echo ... UnitType.i
+	@echo ... UnitType.s
+	@echo ... User.obj
+	@echo ... User.i
+	@echo ... User.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

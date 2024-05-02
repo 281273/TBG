@@ -9,6 +9,9 @@ Game::Game(Unit& _unit):unit(_unit){ //View& _view,Model& _model,KeyBinding& _ke
 }
 
 void Game::runGame() {
-    int hp=unit.getHp();
-    cout<<hp;
+    unit.SetStats(1);
+    float dmgmulti=unit.dmgmulti;
+    float hp=unit.hp;
+    string name=unit.name;
+    cout<<hp<<" "<<dmgmulti<<" "<<name;
 }
