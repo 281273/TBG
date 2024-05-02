@@ -8,10 +8,16 @@ Game::Game(Unit& _unit):unit(_unit){ //View& _view,Model& _model,KeyBinding& _ke
 
 }
 
+void Game::GetStats(int typenum) {
+    vector <string> stats=unit.SetStats(typenum);
+    hp=stof(stats[0]);
+    dmgmulti=stof(stats[1]);
+    name=stats[2];
+}
+
+
+
 void Game::runGame() {
-    unit.SetStats(1);
-    float dmgmulti=unit.dmgmulti;
-    float hp=unit.hp;
-    string name=unit.name;
+    GetStats(2);
     cout<<hp<<" "<<dmgmulti<<" "<<name;
 }

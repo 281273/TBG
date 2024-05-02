@@ -18,13 +18,16 @@ using namespace std;
 
 class Unit {
 public:
-    Unit(UnitType& _unittype,User& _user,Pc& _pc);
+    Unit(User& _user,Pc& _pc);
 
-    float hp;
-    float dmgmulti;
-    string name;
+    int GetType();
 
-    void SetStats(int typenum);
+
+    string strhp;
+    string strdmgmulti;
+    string strname;
+
+    vector <string> SetStats(int typenum);
 
 //    virtual int Attack();
 //    virtual int Heal();
@@ -32,7 +35,7 @@ public:
 //    virtual int Flee();
 
 private:
-    UnitType& unittype; User& user; Pc& pc;
+    User& user; Pc& pc;
 
 
 };

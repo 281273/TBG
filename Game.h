@@ -16,10 +16,15 @@ class Game {
 public:
     Game(Unit& _unit);
 
+
     void runGame();
 private:
     Unit& unit;
 
+    float hp{};
+    float dmgmulti{};
+    string name;
+    void GetStats(int typenum);
 
 };
 

@@ -1342,19 +1342,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "SFML_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for SFML."
-				}
-			],
-			"type" : "PATH",
-			"value" : "SFML_DIR-NOTFOUND"
-		},
-		{
-			"name" : "SFML_GRAPHICS_LIBRARY_DYNAMIC_DEBUG",
+			"name" : "FLAC_LIB",
 			"properties" : 
 			[
 				{
@@ -1367,10 +1355,10 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "SFML_GRAPHICS_LIBRARY_DYNAMIC_DEBUG-NOTFOUND"
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libFLAC.a"
 		},
 		{
-			"name" : "SFML_GRAPHICS_LIBRARY_DYNAMIC_RELEASE",
+			"name" : "FreeType_LIB",
 			"properties" : 
 			[
 				{
@@ -1383,10 +1371,10 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "SFML_GRAPHICS_LIBRARY_DYNAMIC_RELEASE-NOTFOUND"
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libfreetype.a"
 		},
 		{
-			"name" : "SFML_GRAPHICS_LIBRARY_STATIC_DEBUG",
+			"name" : "Ogg_LIB",
 			"properties" : 
 			[
 				{
@@ -1399,10 +1387,10 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "SFML_GRAPHICS_LIBRARY_STATIC_DEBUG-NOTFOUND"
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libogg.a"
 		},
 		{
-			"name" : "SFML_GRAPHICS_LIBRARY_STATIC_RELEASE",
+			"name" : "OpenAL_LIB",
 			"properties" : 
 			[
 				{
@@ -1415,10 +1403,10 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "SFML_GRAPHICS_LIBRARY_STATIC_RELEASE-NOTFOUND"
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libopenal32.a"
 		},
 		{
-			"name" : "SFML_INCLUDE_DIR",
+			"name" : "SFML_DOC_DIR",
 			"properties" : 
 			[
 				{
@@ -1427,135 +1415,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "SFML_INCLUDE_DIR-NOTFOUND"
-		},
-		{
-			"name" : "SFML_SYSTEM_LIBRARY_DYNAMIC_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_SYSTEM_LIBRARY_DYNAMIC_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "SFML_SYSTEM_LIBRARY_DYNAMIC_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_SYSTEM_LIBRARY_DYNAMIC_RELEASE-NOTFOUND"
-		},
-		{
-			"name" : "SFML_SYSTEM_LIBRARY_STATIC_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_SYSTEM_LIBRARY_STATIC_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "SFML_SYSTEM_LIBRARY_STATIC_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_SYSTEM_LIBRARY_STATIC_RELEASE-NOTFOUND"
-		},
-		{
-			"name" : "SFML_WINDOW_LIBRARY_DYNAMIC_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_WINDOW_LIBRARY_DYNAMIC_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "SFML_WINDOW_LIBRARY_DYNAMIC_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_WINDOW_LIBRARY_DYNAMIC_RELEASE-NOTFOUND"
-		},
-		{
-			"name" : "SFML_WINDOW_LIBRARY_STATIC_DEBUG",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_WINDOW_LIBRARY_STATIC_DEBUG-NOTFOUND"
-		},
-		{
-			"name" : "SFML_WINDOW_LIBRARY_STATIC_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a library."
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "SFML_WINDOW_LIBRARY_STATIC_RELEASE-NOTFOUND"
+			"value" : "SFML_DOC_DIR-NOTFOUND"
 		},
 		{
 			"name" : "TBG_BINARY_DIR",
@@ -1592,6 +1452,54 @@
 			],
 			"type" : "STATIC",
 			"value" : "D:/Code/C++Projects/TBG"
+		},
+		{
+			"name" : "VorbisEnc_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libvorbisenc.a"
+		},
+		{
+			"name" : "VorbisFile_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libvorbisfile.a"
+		},
+		{
+			"name" : "Vorbis_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/JetBrains/SFML-2.6.1/lib/libvorbis.a"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

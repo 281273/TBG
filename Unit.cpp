@@ -9,16 +9,38 @@
 //    level=level_;
 //}
 
-Unit::Unit(UnitType& _unittype,User& _user,Pc& _pc):unittype(_unittype),user(_user),pc(_pc){ //View& _view,Model& _model,KeyBinding& _keybinding):view(_view),model(_model),keybinding(_keybinding){
+Unit::Unit(User& _user,Pc& _pc):user(_user),pc(_pc){ //View& _view,Model& _model,KeyBinding& _keybinding):view(_view),model(_model),keybinding(_keybinding){
 
 }
 
+int Unit::GetType(){
+    return 0;
+}
 
-void Unit::SetStats(int typenum){
-    vector <string> stats=unittype.GetStats(typenum);
-    hp=stof(stats[0]);
-    dmgmulti=stof(stats[1]);
-    name=stats[2];
+vector<string> Unit::SetStats(int typenum){
+    switch (typenum) {
+        case 1:
+            strhp="20";
+            strdmgmulti="1.25";
+            strname="SABER";
+            break;
+        case 2:
+            strhp="15";
+            strdmgmulti="1.5";
+            strname="LANCER";
+            break;
+        case 3:
+            strhp="10";
+            strdmgmulti="1.75";
+            strname="ARCHER";
+            break;
+    }
+    vector <string> stats;
+    stats.push_back(strhp);
+    stats.push_back(strdmgmulti);
+    stats.push_back(strname);
+
+    return stats;
 }
 
 //virtual int Unit::Attack(){
