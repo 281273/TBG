@@ -1,60 +1,80 @@
-//
-// Created by Admin on 2024/04/21.
-//
-
 #include "Unit.h"
+
+#include <utility>
 
 //Model::Model(int points_,int level_){
 //    points=points_;
 //    level=level_;
 //}
 
-Unit::Unit(User& _user,Pc& _pc):user(_user),pc(_pc){ //View& _view,Model& _model,KeyBinding& _keybinding):view(_view),model(_model),keybinding(_keybinding){
-
+Unit::Unit(const string& filename,string  name,float hp,float dmgmulti,bool active):hp(hp),dmgmulti(dmgmulti),name(std::move(name)){
+    LoadTexture(filename);
+    Init();
 }
 
-int Unit::GetType(){
+Unit::~Unit()= default;
+
+void Unit::LoadTexture(const string& filename){
+    if (!texture.loadFromFile("../sprites/"+filename+".png")) {
+        std::cerr << "Texture error player \n";
+    }
+}
+
+void Unit::Init(){
+    sprite.setTexture(texture);
+    sprite.setPosition(0, 0);
+}
+
+void Unit::draw(sf::RenderWindow& window) const {
+    window.draw(sprite);
+}
+
+//void Unit::SetStats(int typenum){
+//    switch (typenum) {
+//        case 1:
+//            hp=20;
+//            dmgmulti=1.25;
+//            name="SABER";
+//            break;
+//        case 2:
+//            hp=15;
+//            dmgmulti=1.5;
+//            name="LANCER";
+//            break;
+//        case 3:
+//            hp=10;
+//            dmgmulti=1.75;
+//            name="ARCHER";
+//            break;
+//    }
+//
+//}
+float Unit::SetHp(float newhp){
+    hp=newhp;
+    return hp;
+}
+
+float Unit::GetHp() const{
+    return hp;
+}
+
+float Unit::GetDmgMulti() const{
+    return dmgmulti;
+}
+
+const string &Unit::getName() const {
+    return name;
+}
+
+int Unit::Attack(){
     return 0;
 }
-
-vector<string> Unit::SetStats(int typenum){
-    switch (typenum) {
-        case 1:
-            strhp="20";
-            strdmgmulti="1.25";
-            strname="SABER";
-            break;
-        case 2:
-            strhp="15";
-            strdmgmulti="1.5";
-            strname="LANCER";
-            break;
-        case 3:
-            strhp="10";
-            strdmgmulti="1.75";
-            strname="ARCHER";
-            break;
-    }
-    vector <string> stats;
-    stats.push_back(strhp);
-    stats.push_back(strdmgmulti);
-    stats.push_back(strname);
-
-    return stats;
+int Unit::Heal(){
+    return 0;
 }
-
-//virtual int Unit::Attack(){
-//
-//}
-//
-//virtual int Unit::Heal(){
-//
-//}
-//
-//virtual int Unit::ChangeUnit(){
-//
-//}
-//
-//virtual int Unit::Flee(){
-//
-//}
+int Unit::ChangeUnit(){
+    return 0;
+}
+int Unit::Flee(){
+    return 0;
+}

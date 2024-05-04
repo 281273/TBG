@@ -86,16 +86,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Code/C++Projects/TBG/BackGround.cpp">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/BackGround.h">
+			<Option target="TBG"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/Game.cpp">
 			<Option target="TBG"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/Game.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Pc.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/PcUnit.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Pc.h">
+		<Unit filename="D:/Code/C++Projects/TBG/PcUnit.h">
 			<Option target="TBG"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/Unit.cpp">
@@ -104,16 +110,10 @@
 		<Unit filename="D:/Code/C++Projects/TBG/Unit.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/UnitType.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/UserUnit.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/UnitType.h">
-			<Option target="TBG"/>
-		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/User.cpp">
-			<Option target="TBG"/>
-		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/User.h">
+		<Unit filename="D:/Code/C++Projects/TBG/UserUnit.h">
 			<Option target="TBG"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/main.cpp">

@@ -13,8 +13,9 @@ find_package(SFML 2.6 COMPONENTS graphics audio window REQUIRED)
 add_executable(TBG main.cpp
         Unit.cpp
         Game.cpp
-        User.cpp
-        Pc.cpp
-        UnitType.cpp)
+        UserUnit.cpp
+        PcUnit.cpp
+        BackGround.cpp
+)
 
 target_link_libraries(TBG sfml-graphics)

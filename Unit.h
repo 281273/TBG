@@ -1,41 +1,48 @@
-//
-// Created by Admin on 2024/04/21.
-//
-
 #ifndef TBG_UNIT_H
 #define TBG_UNIT_H
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <random>
 
-#include "UnitType.h"
-#include "User.h"
-#include "Pc.h"
-
+#include "SFML/Graphics.hpp"
+#include "SFML/Window.hpp"
+#include "SFML/System.hpp"
+#include "SFML/Audio.hpp"
 
 using namespace std;
 
-
 class Unit {
 public:
-    Unit(User& _user,Pc& _pc);
+    float hp;
+    float dmgmulti;
+    string name;
 
-    int GetType();
+    sf::Texture texture;
+    sf::Sprite sprite;
+
+    void LoadTexture(const string& filename);
+    virtual void Init();
+//    virtual void SetStats(int typenum);
+    void draw(sf::RenderWindow& window) const;
+
+    float SetHp(float newhp);
+    float GetHp() const;
+    float GetDmgMulti() const;
+    const string &getName() const;
+
+    virtual int Attack();
+    virtual int Heal();
+    virtual int ChangeUnit();
+    virtual int Flee();
+
+    Unit(const string& filename,string  name,float hp,float dmgmulti,bool active);
+    ~Unit();
 
 
-    string strhp;
-    string strdmgmulti;
-    string strname;
-
-    vector <string> SetStats(int typenum);
-
-//    virtual int Attack();
-//    virtual int Heal();
-//    virtual int ChangeUnit();
-//    virtual int Flee();
 
 private:
-    User& user; Pc& pc;
 
 
 };

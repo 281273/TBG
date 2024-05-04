@@ -5,27 +5,36 @@
 #ifndef TBG_GAME_H
 #define TBG_GAME_H
 
+#include <memory>
+#include <vector>
 #include <iostream>
 #include <string>
+#include "SFML/Graphics.hpp"
+#include "SFML/Window.hpp"
+#include "SFML/System.hpp"
+#include "SFML/Audio.hpp"
 
+#include "BackGround.h"
 #include "Unit.h"
+#include "PcUnit.h"
+#include "UserUnit.h"
 
 using namespace std;
 
 class Game {
 public:
-    Game(Unit& _unit);
+//    Game(UserUnit& _user,PcUnit& _pc);
+    Game();
 
-
-    void runGame();
+    void GameLoop();
 private:
-    Unit& unit;
+//    UserUnit& user; PcUnit& pc;
 
-    float hp{};
-    float dmgmulti{};
-    string name;
-    void GetStats(int typenum);
+    void Update();
+    void Render();
 
+    void CreateUnits();
+    vector <shared_ptr<Unit>> UnitsTab;
 };
 
 

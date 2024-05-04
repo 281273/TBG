@@ -113,59 +113,59 @@ CMakeFiles/TBG.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/Game.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\Game.cpp -o CMakeFiles\TBG.dir\Game.cpp.s
 
-CMakeFiles/TBG.dir/User.cpp.obj: CMakeFiles/TBG.dir/flags.make
-CMakeFiles/TBG.dir/User.cpp.obj: CMakeFiles/TBG.dir/includes_CXX.rsp
-CMakeFiles/TBG.dir/User.cpp.obj: D:/Code/C++Projects/TBG/User.cpp
-CMakeFiles/TBG.dir/User.cpp.obj: CMakeFiles/TBG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Projects\TBG\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TBG.dir/User.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TBG.dir/User.cpp.obj -MF CMakeFiles\TBG.dir\User.cpp.obj.d -o CMakeFiles\TBG.dir\User.cpp.obj -c D:\Code\C++Projects\TBG\User.cpp
+CMakeFiles/TBG.dir/UserUnit.cpp.obj: CMakeFiles/TBG.dir/flags.make
+CMakeFiles/TBG.dir/UserUnit.cpp.obj: CMakeFiles/TBG.dir/includes_CXX.rsp
+CMakeFiles/TBG.dir/UserUnit.cpp.obj: D:/Code/C++Projects/TBG/UserUnit.cpp
+CMakeFiles/TBG.dir/UserUnit.cpp.obj: CMakeFiles/TBG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Projects\TBG\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TBG.dir/UserUnit.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TBG.dir/UserUnit.cpp.obj -MF CMakeFiles\TBG.dir\UserUnit.cpp.obj.d -o CMakeFiles\TBG.dir\UserUnit.cpp.obj -c D:\Code\C++Projects\TBG\UserUnit.cpp
 
-CMakeFiles/TBG.dir/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TBG.dir/User.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Projects\TBG\User.cpp > CMakeFiles\TBG.dir\User.cpp.i
+CMakeFiles/TBG.dir/UserUnit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TBG.dir/UserUnit.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Projects\TBG\UserUnit.cpp > CMakeFiles\TBG.dir\UserUnit.cpp.i
 
-CMakeFiles/TBG.dir/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/User.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\User.cpp -o CMakeFiles\TBG.dir\User.cpp.s
+CMakeFiles/TBG.dir/UserUnit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/UserUnit.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\UserUnit.cpp -o CMakeFiles\TBG.dir\UserUnit.cpp.s
 
-CMakeFiles/TBG.dir/Pc.cpp.obj: CMakeFiles/TBG.dir/flags.make
-CMakeFiles/TBG.dir/Pc.cpp.obj: CMakeFiles/TBG.dir/includes_CXX.rsp
-CMakeFiles/TBG.dir/Pc.cpp.obj: D:/Code/C++Projects/TBG/Pc.cpp
-CMakeFiles/TBG.dir/Pc.cpp.obj: CMakeFiles/TBG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Projects\TBG\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TBG.dir/Pc.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TBG.dir/Pc.cpp.obj -MF CMakeFiles\TBG.dir\Pc.cpp.obj.d -o CMakeFiles\TBG.dir\Pc.cpp.obj -c D:\Code\C++Projects\TBG\Pc.cpp
+CMakeFiles/TBG.dir/PcUnit.cpp.obj: CMakeFiles/TBG.dir/flags.make
+CMakeFiles/TBG.dir/PcUnit.cpp.obj: CMakeFiles/TBG.dir/includes_CXX.rsp
+CMakeFiles/TBG.dir/PcUnit.cpp.obj: D:/Code/C++Projects/TBG/PcUnit.cpp
+CMakeFiles/TBG.dir/PcUnit.cpp.obj: CMakeFiles/TBG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Projects\TBG\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TBG.dir/PcUnit.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TBG.dir/PcUnit.cpp.obj -MF CMakeFiles\TBG.dir\PcUnit.cpp.obj.d -o CMakeFiles\TBG.dir\PcUnit.cpp.obj -c D:\Code\C++Projects\TBG\PcUnit.cpp
 
-CMakeFiles/TBG.dir/Pc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TBG.dir/Pc.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Projects\TBG\Pc.cpp > CMakeFiles\TBG.dir\Pc.cpp.i
+CMakeFiles/TBG.dir/PcUnit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TBG.dir/PcUnit.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Projects\TBG\PcUnit.cpp > CMakeFiles\TBG.dir\PcUnit.cpp.i
 
-CMakeFiles/TBG.dir/Pc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/Pc.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\Pc.cpp -o CMakeFiles\TBG.dir\Pc.cpp.s
+CMakeFiles/TBG.dir/PcUnit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/PcUnit.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\PcUnit.cpp -o CMakeFiles\TBG.dir\PcUnit.cpp.s
 
-CMakeFiles/TBG.dir/UnitType.cpp.obj: CMakeFiles/TBG.dir/flags.make
-CMakeFiles/TBG.dir/UnitType.cpp.obj: CMakeFiles/TBG.dir/includes_CXX.rsp
-CMakeFiles/TBG.dir/UnitType.cpp.obj: D:/Code/C++Projects/TBG/UnitType.cpp
-CMakeFiles/TBG.dir/UnitType.cpp.obj: CMakeFiles/TBG.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Projects\TBG\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TBG.dir/UnitType.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TBG.dir/UnitType.cpp.obj -MF CMakeFiles\TBG.dir\UnitType.cpp.obj.d -o CMakeFiles\TBG.dir\UnitType.cpp.obj -c D:\Code\C++Projects\TBG\UnitType.cpp
+CMakeFiles/TBG.dir/BackGround.cpp.obj: CMakeFiles/TBG.dir/flags.make
+CMakeFiles/TBG.dir/BackGround.cpp.obj: CMakeFiles/TBG.dir/includes_CXX.rsp
+CMakeFiles/TBG.dir/BackGround.cpp.obj: D:/Code/C++Projects/TBG/BackGround.cpp
+CMakeFiles/TBG.dir/BackGround.cpp.obj: CMakeFiles/TBG.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\Code\C++Projects\TBG\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TBG.dir/BackGround.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TBG.dir/BackGround.cpp.obj -MF CMakeFiles\TBG.dir\BackGround.cpp.obj.d -o CMakeFiles\TBG.dir\BackGround.cpp.obj -c D:\Code\C++Projects\TBG\BackGround.cpp
 
-CMakeFiles/TBG.dir/UnitType.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TBG.dir/UnitType.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Projects\TBG\UnitType.cpp > CMakeFiles\TBG.dir\UnitType.cpp.i
+CMakeFiles/TBG.dir/BackGround.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TBG.dir/BackGround.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Code\C++Projects\TBG\BackGround.cpp > CMakeFiles\TBG.dir\BackGround.cpp.i
 
-CMakeFiles/TBG.dir/UnitType.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/UnitType.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\UnitType.cpp -o CMakeFiles\TBG.dir\UnitType.cpp.s
+CMakeFiles/TBG.dir/BackGround.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TBG.dir/BackGround.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Code\C++Projects\TBG\BackGround.cpp -o CMakeFiles\TBG.dir\BackGround.cpp.s
 
 # Object files for target TBG
 TBG_OBJECTS = \
 "CMakeFiles/TBG.dir/main.cpp.obj" \
 "CMakeFiles/TBG.dir/Unit.cpp.obj" \
 "CMakeFiles/TBG.dir/Game.cpp.obj" \
-"CMakeFiles/TBG.dir/User.cpp.obj" \
-"CMakeFiles/TBG.dir/Pc.cpp.obj" \
-"CMakeFiles/TBG.dir/UnitType.cpp.obj"
+"CMakeFiles/TBG.dir/UserUnit.cpp.obj" \
+"CMakeFiles/TBG.dir/PcUnit.cpp.obj" \
+"CMakeFiles/TBG.dir/BackGround.cpp.obj"
 
 # External object files for target TBG
 TBG_EXTERNAL_OBJECTS =
@@ -173,9 +173,9 @@ TBG_EXTERNAL_OBJECTS =
 TBG.exe: CMakeFiles/TBG.dir/main.cpp.obj
 TBG.exe: CMakeFiles/TBG.dir/Unit.cpp.obj
 TBG.exe: CMakeFiles/TBG.dir/Game.cpp.obj
-TBG.exe: CMakeFiles/TBG.dir/User.cpp.obj
-TBG.exe: CMakeFiles/TBG.dir/Pc.cpp.obj
-TBG.exe: CMakeFiles/TBG.dir/UnitType.cpp.obj
+TBG.exe: CMakeFiles/TBG.dir/UserUnit.cpp.obj
+TBG.exe: CMakeFiles/TBG.dir/PcUnit.cpp.obj
+TBG.exe: CMakeFiles/TBG.dir/BackGround.cpp.obj
 TBG.exe: CMakeFiles/TBG.dir/build.make
 TBG.exe: C:/Program\ Files/JetBrains/SFML-2.6.1/lib/libsfml-graphics-s-d.a
 TBG.exe: C:/Program\ Files/JetBrains/SFML-2.6.1/lib/libsfml-window-s-d.a
