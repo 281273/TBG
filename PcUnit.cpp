@@ -1,8 +1,12 @@
 
 #include "PcUnit.h"
 
-PcUnit::PcUnit(const string& filename,const string& name,float hp,float dmgmulti,bool active): Unit(filename,name,hp,dmgmulti,active){
+PcUnit::PcUnit(const string& filename,bool active): Unit(filename,active){
     LoadTexture(filename);
-    Init();
 }
 
+void PcUnit::Init(){
+    sprite.setTexture(texture);
+    sprite.scale(-1,1);
+    sprite.setPosition(780, 290);
+}
