@@ -29,16 +29,12 @@ public:
     void GameLoop();
 private:
 //    UserUnit& user; PcUnit& pc;
-    sf::Vector2i mousePosWindow;
-    void UpadateMousePosition(sf::RenderWindow& window);
 
-    void Update(sf::RenderWindow& window);
-    void Render(sf::RenderWindow& window);
+    void Update();
+    void Render();
 
     void CreateUnits();
     vector <shared_ptr<Unit>> UnitsTab;
-    int activeUser;
-    int activePc;
 };
 
 

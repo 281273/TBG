@@ -5,8 +5,7 @@
 
 class PcUnit : public Unit {
 public:
-    PcUnit(const string& filename,bool active);
-    void Init() override;
+    PcUnit(const string& filename,const string& name,float hp,float dmgmulti,bool active);
 private:
 
 };

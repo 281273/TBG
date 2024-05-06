@@ -1,10 +1,7 @@
 #include "UserUnit.h"
 
-UserUnit::UserUnit(const string& filename,bool active): Unit(filename,active){
+UserUnit::UserUnit(const string& filename,const string& name,float hp,float dmgmulti,bool active): Unit(filename,name,hp,dmgmulti,active){
     LoadTexture(filename);
+    Init();
 }
 
-void UserUnit::Init(){
-    sprite.setTexture(texture);
-    sprite.setPosition(240, 430);
-}
