@@ -37,7 +37,7 @@ public:
     virtual int ChangeUnit();
     virtual int Flee();
 
-    Unit(const string& filename,string  name,float hp,float dmgmulti,bool active);
+    Unit(const string& filename,bool active);
     ~Unit();
 
 
