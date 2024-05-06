@@ -18,6 +18,7 @@
 #include "Unit.h"
 #include "PcUnit.h"
 #include "UserUnit.h"
+#include "Input.h"
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
 //    Game(UserUnit& _user,PcUnit& _pc);
     Game();
 
-    void GameLoop();
+    void MainLoop();
 private:
 //    UserUnit& user; PcUnit& pc;
     sf::Vector2i mousePosWindow;
@@ -39,6 +40,8 @@ private:
     vector <shared_ptr<Unit>> UnitsTab;
     int activeUser;
     int activePc;
+
+    void GameLoop(sf::RenderWindow& window);
 };
 
 

@@ -98,6 +98,12 @@
 		<Unit filename="D:/Code/C++Projects/TBG/Game.h">
 			<Option target="TBG"/>
 		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/Input.cpp">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/Input.h">
+			<Option target="TBG"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/PcUnit.cpp">
 			<Option target="TBG"/>
 		</Unit>

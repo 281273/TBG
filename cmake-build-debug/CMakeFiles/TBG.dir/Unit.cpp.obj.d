@@ -298,6 +298,4 @@ CMakeFiles/TBG.dir/Unit.cpp.obj: D:\Code\C++Projects\TBG\Unit.cpp \
  C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileFactory.hpp \
  C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileFactory.inl \
  C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileReader.hpp \
- C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileWriter.hpp \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
- C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h
+ C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileWriter.hpp

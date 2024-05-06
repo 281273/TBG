@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/Code/C++Projects/TBG/BackGround.cpp" "CMakeFiles/TBG.dir/BackGround.cpp.obj" "gcc" "CMakeFiles/TBG.dir/BackGround.cpp.obj.d"
   "D:/Code/C++Projects/TBG/Game.cpp" "CMakeFiles/TBG.dir/Game.cpp.obj" "gcc" "CMakeFiles/TBG.dir/Game.cpp.obj.d"
+  "D:/Code/C++Projects/TBG/Input.cpp" "CMakeFiles/TBG.dir/Input.cpp.obj" "gcc" "CMakeFiles/TBG.dir/Input.cpp.obj.d"
   "D:/Code/C++Projects/TBG/PcUnit.cpp" "CMakeFiles/TBG.dir/PcUnit.cpp.obj" "gcc" "CMakeFiles/TBG.dir/PcUnit.cpp.obj.d"
   "D:/Code/C++Projects/TBG/Unit.cpp" "CMakeFiles/TBG.dir/Unit.cpp.obj" "gcc" "CMakeFiles/TBG.dir/Unit.cpp.obj.d"
   "D:/Code/C++Projects/TBG/UserUnit.cpp" "CMakeFiles/TBG.dir/UserUnit.cpp.obj" "gcc" "CMakeFiles/TBG.dir/UserUnit.cpp.obj.d"

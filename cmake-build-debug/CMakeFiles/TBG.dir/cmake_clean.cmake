@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TBG.dir/BackGround.cpp.obj.d"
   "CMakeFiles/TBG.dir/Game.cpp.obj"
   "CMakeFiles/TBG.dir/Game.cpp.obj.d"
+  "CMakeFiles/TBG.dir/Input.cpp.obj"
+  "CMakeFiles/TBG.dir/Input.cpp.obj.d"
   "CMakeFiles/TBG.dir/PcUnit.cpp.obj"
   "CMakeFiles/TBG.dir/PcUnit.cpp.obj.d"
   "CMakeFiles/TBG.dir/Unit.cpp.obj"

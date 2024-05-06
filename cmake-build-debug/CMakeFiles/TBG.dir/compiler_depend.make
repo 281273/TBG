@@ -589,9 +589,13 @@ CMakeFiles/TBG.dir/Game.cpp.obj: D:/Code/C++Projects/TBG/Game.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   D:/Code/C++Projects/TBG/BackGround.h \
   D:/Code/C++Projects/TBG/Game.h \
+  D:/Code/C++Projects/TBG/Input.h \
   D:/Code/C++Projects/TBG/PcUnit.h \
   D:/Code/C++Projects/TBG/Unit.h \
   D:/Code/C++Projects/TBG/UserUnit.h
+
+CMakeFiles/TBG.dir/Input.cpp.obj: D:/Code/C++Projects/TBG/Input.cpp \
+  D:/Code/C++Projects/TBG/Input.h
 
 CMakeFiles/TBG.dir/PcUnit.cpp.obj: D:/Code/C++Projects/TBG/PcUnit.cpp \
   C:/Program\ Files/JetBrains/SFML-2.6.1/include/SFML/Audio.hpp \
@@ -1057,7 +1061,6 @@ CMakeFiles/TBG.dir/Unit.cpp.obj: D:/Code/C++Projects/TBG/Unit.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
-  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tempbuf.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_tree.h \
@@ -1132,7 +1135,6 @@ CMakeFiles/TBG.dir/Unit.cpp.obj: D:/Code/C++Projects/TBG/Unit.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
-  C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -1818,6 +1820,7 @@ CMakeFiles/TBG.dir/main.cpp.obj: D:/Code/C++Projects/TBG/main.cpp \
   C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/wctype.h \
   D:/Code/C++Projects/TBG/BackGround.h \
   D:/Code/C++Projects/TBG/Game.h \
+  D:/Code/C++Projects/TBG/Input.h \
   D:/Code/C++Projects/TBG/PcUnit.h \
   D:/Code/C++Projects/TBG/Unit.h \
   D:/Code/C++Projects/TBG/UserUnit.h
@@ -1898,6 +1901,8 @@ C:/Program\ Files/JetBrains/SFML-2.6.1/include/SFML/Audio/SoundFileReader.hpp:
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h:
 
 C:/Program\ Files/JetBrains/SFML-2.6.1/include/SFML/Audio/SoundFileWriter.hpp:
+
+D:/Code/C++Projects/TBG/Input.cpp:
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc:
 
@@ -2371,8 +2376,6 @@ C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include
 
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/malloc.h:
 
-C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility:
-
 C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include/pthread.h:
 
 D:/Code/C++Projects/TBG/Unit.cpp:
@@ -2463,11 +2466,11 @@ C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/x86_64-w64-mingw32/include
 
 D:/Code/C++Projects/TBG/Game.h:
 
+D:/Code/C++Projects/TBG/Input.h:
+
 D:/Code/C++Projects/TBG/PcUnit.h:
 
 D:/Code/C++Projects/TBG/Unit.h:
-
-C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h:
 
 D:/Code/C++Projects/TBG/UserUnit.cpp:
 
