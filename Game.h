@@ -38,6 +38,7 @@ private:
     void Update(sf::RenderWindow& window);
     void RenderMenu(sf::RenderWindow& window);
     void RenderGame(sf::RenderWindow& window);
+    void RenderOver(sf::RenderWindow& window);
 
     void CreateUnits();
 
@@ -45,7 +46,7 @@ private:
     int activePc;
     bool userTurn;
     bool manuUp;
-
+    bool over;
     void UserTurn();
     void PcTurn();
     static double Decide(double a,double b);

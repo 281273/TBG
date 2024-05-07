@@ -4,13 +4,12 @@
 Game::Game(){
     //View& _view,Model& _model,KeyBinding& _keybinding):view(_view),model(_model),keybinding(_keybinding){
     CreateUnits();
-    activePc = 0;
-    activeUser = 1;
+    activePc = 3;
+    activeUser = 0;
     manuUp = true;
+    over = false;
     userTurn = true;
 }
-
-
 
 void Game::GameLoop() {
     //Ini
@@ -30,10 +29,15 @@ void Game::GameLoop() {
         //Update
         Update(window);
         //Render
-        if(manuUp){
-            RenderMenu(window);
+
+        if(over){
+            RenderOver(window);
         }else{
-            RenderGame(window);
+            if(manuUp){
+                RenderMenu(window);
+            }else{
+                RenderGame(window);
+            }
         }
     }
 }
@@ -82,13 +86,24 @@ void Game::RenderGame(sf::RenderWindow& window){
     window.display();
 }
 
-void Game::CreateUnits(){
-    UnitsTab.push_back(make_shared<PcUnit>("LANCER"));     //0
-
-    UnitsTab.push_back(make_shared<UserUnit>("SABER"));     //1
-    UnitsTab.push_back(make_shared<UserUnit>("LANCER"));    //2
-    UnitsTab.push_back(make_shared<UserUnit>("ARCHER"));   //3
+void Game::RenderOver(sf::RenderWindow& window){
+    window.clear(sf::Color::Blue);
+    //Draw here
+    BackGround("OVER").draw(window);
+//    UnitsTab[activePc]->draw(window);
+//    UnitsTab[activeUser]->draw(window);
+    window.display();
 }
+
+void Game::CreateUnits(){
+    UnitsTab.push_back(make_shared<UserUnit>("SABER"));     //0
+    UnitsTab.push_back(make_shared<UserUnit>("LANCER"));    //1
+    UnitsTab.push_back(make_shared<UserUnit>("ARCHER"));   //2
+
+    UnitsTab.push_back(make_shared<PcUnit>("LANCER"));     //3
+}
+
+
 
 void Game::UserTurn(){
     float myhp = UnitsTab[activeUser]->GetHp();
@@ -96,6 +111,7 @@ void Game::UserTurn(){
     float dmgmulti = UnitsTab[activeUser]->GetDmgMulti();
     string myname = UnitsTab[activeUser]->getName();
     string enemyname = UnitsTab[activePc]->getName();
+    int score=0;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q)){
         //attack
@@ -108,34 +124,55 @@ void Game::UserTurn(){
 
         }
         enemyhp-=dmg;
-        cout<<"Player"<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
+        cout<<"Player atk "<<myname<<" "<<myhp<<"-"<<enemyname<<" "<<enemyhp<<"\n";  //do wywalenia-------------------------------------------------------------
         UnitsTab[activePc]->SetHp(enemyhp);
         userTurn=false;
     }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)){
         //heal/overheal
         UnitsTab[activeUser]->SetHp(myhp+2);
-        cout<<"Player"<<UnitsTab[activeUser]->GetHp()<<" "; //do wywalenia
+        cout<<"Player heal "<<UnitsTab[activeUser]->GetHp()<<"\n"; //do wywalenia -----------------------------------------------------
         userTurn=false;
     }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)){   //hold
         //changeunit
         //cout<<"1-3 ";
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num1)){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num1) and (UnitsTab[0]->GetHp())>0){
+            //SABER
+            activeUser=0;
+            cout<<"Player change to"<<activeUser<<"\n";
+            userTurn=false;
+        }else if((sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num2)) and (UnitsTab[1]->GetHp())>0){
+            //LANCER
             activeUser=1;
-            cout<<activeUser<<" ";
+            cout<<"Player change to"<<activeUser<<"\n";
             userTurn=false;
-        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num2)){
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num3) and (UnitsTab[2]->GetHp())>0){
+            //ARCHER
             activeUser=2;
-            cout<<activeUser<<" ";
+            cout<<"Player change to"<<activeUser<<"\n";
             userTurn=false;
-        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num3)){
-            activeUser=3;
-            cout<<activeUser<<" ";
-            userTurn=false;
+        }else{
+            cout<<" cant do that ";
         }
 
     }
+    //changeuit dead pc
+    if(enemyhp<=0){
+        double unit = int(Decide(1.0,4.0));
+        UnitsTab.erase (UnitsTab.begin()+3);
+        score+=1;
+        cout<<" "<<enemyname<<" umrzal-score "<<score<<" ";
+        if(unit==1){
+            UnitsTab.push_back(make_shared<PcUnit>("SABER"));
+        }else if(unit==2){
+            UnitsTab.push_back(make_shared<PcUnit>("LANCER"));
+        }else{
+            UnitsTab.push_back(make_shared<PcUnit>("ARCHER"));
+        }
+    }
 
+    //koniuec player turn ----------------------------------------------------------------------------------------------
 }
+
 
 void Game::PcTurn(){
     float myhp = UnitsTab[activePc]->GetHp();
@@ -146,8 +183,7 @@ void Game::PcTurn(){
     //action
     double border = 25.0;
     double action = Decide(1.0,101.0);
-    double unit = int(Decide(1.0,4.0));
-    int i=0;
+
     if(myhp<10){
         border+=25.0;
     }
@@ -155,7 +191,7 @@ void Game::PcTurn(){
     if(action<=border){
         //heal
         UnitsTab[activePc]->SetHp(myhp+3);
-        cout<<"Pc"<<UnitsTab[activePc]->GetHp()<<" "; //do wywalenia
+        cout<<"Pc heal "<<UnitsTab[activePc]->GetHp()<<"\n-------------------------new turn-----------------------\n"; //do wywalenia
         userTurn = true;
     }else{
         //attack
@@ -168,23 +204,25 @@ void Game::PcTurn(){
 
         }
         enemyhp-=dmg;
-        cout<<"Pc"<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
+        cout<<"Pc atk "<<myname<<" "<<myhp<<"-"<<enemyname<<" "<<enemyhp<<"\n--------------new turn-------------\n";  //do wywalenia ---------------------------------
         UnitsTab[activeUser]->SetHp(enemyhp);
         userTurn = true;
     }
-    cout<<action<<" "<<unit<<"\n";
-    //changeuit
-    if(myhp<=0){
-        i+=1;
-        if(unit==1){
-            //UnitsTab[activePc];
-        }else if(unit==2){
-
+    //Dead units - game over
+    if(enemyhp<=0){
+        if(UnitsTab[0]->GetHp()>0){
+            activeUser=0;
+        }else if(UnitsTab[1]->GetHp()>0){
+            activeUser=1;
+        }else if(UnitsTab[2]->GetHp()>0){
+            activeUser=2;
         }else{
-
+            //game over
+            cout<<"over";
+            over = true;
         }
-        userTurn = true;
     }
+
 }
 
 double Game::Decide(double a, double b){
