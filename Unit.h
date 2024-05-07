@@ -32,18 +32,10 @@ public:
     float GetDmgMulti() const;
     const string &getName() const;
 
-    virtual int Attack();
-    virtual int Heal();
-    virtual int ChangeUnit();
-    virtual int Flee();
-
-    Unit(const string& filename,bool active);
+    Unit(const string& filename);
     ~Unit();
 
-
-
 private:
-
 
 };
 

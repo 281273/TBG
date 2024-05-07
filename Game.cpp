@@ -1,22 +1,22 @@
 #include "Game.h"
 
+//Game::Game(UserUnit& _userunit,PcUnit& _pcunit,Input& _input):userunit(_userunit),pcunit(_pcunit),input(_input){
 Game::Game(){
     //View& _view,Model& _model,KeyBinding& _keybinding):view(_view),model(_model),keybinding(_keybinding){
     CreateUnits();
-    activePc=1;
-    activeUser=1;
+    activePc = 0;
+    activeUser = 1;
+    manuUp = true;
+    userTurn = true;
 }
 
 
 
 void Game::GameLoop() {
     //Ini
+
     sf::RenderWindow window(sf::VideoMode(1050,540),"Turn-Based Game");
     window.setFramerateLimit(120);
-
-//    sf::Texture texture;
-//    texture.loadFromFile("../sprites/SABER.png");
-//    sf::Sprite player = sf::Sprite(texture);
 
     //Main game loop
     while(window.isOpen()){
@@ -25,9 +25,18 @@ void Game::GameLoop() {
             if(event.type==sf::Event::Closed){
                 window.close();
             }
-            Game::Update(window);
-            Game::Render(window);
-            //cout<<UnitsTab[0]->GetHp()<<" ";
+
+            //Update
+            Update(window);
+
+            //Render
+            if(manuUp){
+               RenderMenu(window);
+            }else{
+                RenderGame(window);
+            }
+
+
 
         }
     }
@@ -36,28 +45,107 @@ void Game::GameLoop() {
 void Game::Update(sf::RenderWindow& window){ //potem usunac parametr
     //Mouse
     UpadateMousePosition(window);
+
+    //Inputs
+    if(manuUp and sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
+        manuUp = false;
+    }else if (!manuUp) {
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape)) {
+            manuUp = true;
+        }
+
+        if(userTurn){
+            UserTurn();
+        }else{
+            PcTurn();
+        }
+
+//
+    }
 }
 
 void Game::UpadateMousePosition(sf::RenderWindow& window){
-    cout<<sf::Mouse::getPosition(window).x <<" "<<sf::Mouse::getPosition(window).y<<"\n";
+    //cout<<sf::Mouse::getPosition(window).x <<" "<<sf::Mouse::getPosition(window).y<<"\n";
     mousePosWindow = sf::Mouse::getPosition(window);
-
 }
 
-void Game::Render(sf::RenderWindow& window){
+void Game::RenderMenu(sf::RenderWindow& window){
+    window.clear(sf::Color::Blue);
+    //Draw here
+    BackGround("MENU").draw(window);
+//    UnitsTab[activePc]->draw(window);
+//    UnitsTab[activeUser]->draw(window);
+    window.display();
+}
+
+void Game::RenderGame(sf::RenderWindow& window){
     window.clear(sf::Color::Blue);
     //Draw here
     BackGround("BG").draw(window);
-    UnitsTab[0]->draw(window);
+    UnitsTab[activePc]->draw(window);
     UnitsTab[activeUser]->draw(window);
 
     window.display();
 }
 
 void Game::CreateUnits(){
-    UnitsTab.push_back(make_shared<PcUnit>("LANCER",true));     //0
+    UnitsTab.push_back(make_shared<PcUnit>("LANCER"));     //0
 
-    UnitsTab.push_back(make_shared<UserUnit>("SABER",true));     //1
-    UnitsTab.push_back(make_shared<UserUnit>("LANCER",false));    //2
-    UnitsTab.push_back(make_shared<UserUnit>("ARCHER",false));   //3
+    UnitsTab.push_back(make_shared<UserUnit>("SABER"));     //1
+    UnitsTab.push_back(make_shared<UserUnit>("LANCER"));    //2
+    UnitsTab.push_back(make_shared<UserUnit>("ARCHER"));   //3
+}
+
+void Game::UserTurn(){
+    float myhp = UnitsTab[activeUser]->GetHp();
+    float enemyhp = UnitsTab[activePc]->GetHp();
+    float dmgmulti = UnitsTab[activeUser]->GetDmgMulti();
+    string myname = UnitsTab[activeUser]->getName();
+    string enemyname = UnitsTab[activePc]->getName();
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q)){
+        //attack
+        float dmg=4;
+        if((myname == "Saber" && enemyname=="Lancer") or (myname == "Lancer" && enemyname=="Archer") or (myname == "Archer" && enemyname=="Saber")){
+            dmg = dmg + (dmg * dmgmulti);
+        }else if((myname == "Lancer" && enemyname=="Saber")or(myname == "Archer" && enemyname=="Lancer")or(myname == "Saber" && enemyname=="Archer")) {
+            dmg = dmg - (dmg * dmgmulti);
+        }else{
+
+        }
+        enemyhp-=dmg;
+        cout<<" "<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
+        UnitsTab[activePc]->SetHp(enemyhp);
+        userTurn=false;
+    }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)){
+        //heal/overheal
+        UnitsTab[activeUser]->SetHp(myhp+2);
+        cout<<" "<<UnitsTab[activeUser]->GetHp()<<" "; //do wywalenia
+        userTurn=false;
+    }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)){   //hold
+        //changeunit
+        cout<<"1-3 ";
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num1)){
+            activeUser=1;
+            cout<<activeUser<<" ";
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num2)){
+            activeUser=2;
+            cout<<activeUser<<" ";
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num3)){
+            activeUser=3;
+            cout<<activeUser<<" ";
+        }
+        userTurn=false;
+    }
+}
+
+void Game::PcTurn(){
+    //action
+
+    //attack
+
+    //heal
+
+    //changeunit
+    userTurn = true;
 }

@@ -176,30 +176,6 @@ Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Game.cpp.s
 .PHONY : Game.cpp.s
 
-Input.obj: Input.cpp.obj
-.PHONY : Input.obj
-
-# target to build an object file
-Input.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Input.cpp.obj
-.PHONY : Input.cpp.obj
-
-Input.i: Input.cpp.i
-.PHONY : Input.i
-
-# target to preprocess a source file
-Input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Input.cpp.i
-.PHONY : Input.cpp.i
-
-Input.s: Input.cpp.s
-.PHONY : Input.s
-
-# target to generate assembly for a file
-Input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Input.cpp.s
-.PHONY : Input.cpp.s
-
 PcUnit.obj: PcUnit.cpp.obj
 .PHONY : PcUnit.obj
 
@@ -311,9 +287,6 @@ help:
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s
-	@echo ... Input.obj
-	@echo ... Input.i
-	@echo ... Input.s
 	@echo ... PcUnit.obj
 	@echo ... PcUnit.i
 	@echo ... PcUnit.s

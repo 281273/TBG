@@ -5,8 +5,9 @@
 
 class UserUnit : public Unit {
 public:
-    UserUnit(const string& filename,bool active);
+    UserUnit(const string& filename);
     void Init() override;
+
 private:
 
 };

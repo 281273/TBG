@@ -5,18 +5,18 @@
 //    level=level_;
 //}
 
-Unit::Unit(const string& filename,bool active){
+Unit::Unit(const string& filename){
     if(filename=="SABER"){
         hp=20;
-        dmgmulti=1.25;
+        dmgmulti=0.25;
         name="Saber";
     } else if(filename=="LANCER"){
         hp=15;
-        dmgmulti=1.5;
+        dmgmulti=0.5;
         name="Lancer";
     } else if(filename=="ARCHER"){
         hp=10;
-        dmgmulti=1.75;
+        dmgmulti=0.75;
         name="Archer";
     }
     LoadTexture(filename);
@@ -41,26 +41,6 @@ void Unit::draw(sf::RenderWindow& window) const{
     window.draw(sprite);
 }
 
-//void Unit::SetStats(int typenum){
-//    switch (typenum) {
-//        case 1:
-//            hp=20;
-//            dmgmulti=1.25;
-//            name="SABER";
-//            break;
-//        case 2:
-//            hp=15;
-//            dmgmulti=1.5;
-//            name="LANCER";
-//            break;
-//        case 3:
-//            hp=10;
-//            dmgmulti=1.75;
-//            name="ARCHER";
-//            break;
-//    }
-//
-//}
 float Unit::SetHp(float newhp){
     hp=newhp;
     return hp;
@@ -76,17 +56,4 @@ float Unit::GetDmgMulti() const{
 
 const string &Unit::getName() const {
     return name;
-}
-
-int Unit::Attack(){
-    return 0;
-}
-int Unit::Heal(){
-    return 0;
-}
-int Unit::ChangeUnit(){
-    return 0;
-}
-int Unit::Flee(){
-    return 0;
 }

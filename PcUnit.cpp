@@ -1,7 +1,7 @@
 
 #include "PcUnit.h"
 
-PcUnit::PcUnit(const string& filename,bool active): Unit(filename,active){
+PcUnit::PcUnit(const string& filename): Unit(filename){
     LoadTexture(filename);
 }
 
@@ -10,3 +10,4 @@ void PcUnit::Init(){
     sprite.scale(-1,1);
     sprite.setPosition(780, 290);
 }
+

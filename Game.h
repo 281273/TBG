@@ -23,9 +23,10 @@ using namespace std;
 
 class Game {
 public:
-//    Game(UserUnit& _user,PcUnit& _pc);
     Game();
+    //Game(UserUnit& _userunit,PcUnit& _pcunit,Input& _input);
 
+    vector <shared_ptr<Unit>> UnitsTab;
     void GameLoop();
 private:
 //    UserUnit& user; PcUnit& pc;
@@ -33,12 +34,19 @@ private:
     void UpadateMousePosition(sf::RenderWindow& window);
 
     void Update(sf::RenderWindow& window);
-    void Render(sf::RenderWindow& window);
+    void RenderMenu(sf::RenderWindow& window);
+    void RenderGame(sf::RenderWindow& window);
 
     void CreateUnits();
-    vector <shared_ptr<Unit>> UnitsTab;
+
     int activeUser;
     int activePc;
+    bool userTurn;
+    bool manuUp;
+
+    void UserTurn();
+    void PcTurn();
+
 };
 
 
