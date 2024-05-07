@@ -25,15 +25,15 @@ void Game::GameLoop() {
             if(event.type==sf::Event::Closed){
                 window.close();
             }
+        }
 
-            //Update
-            Update(window);
-            //Render
-            if(manuUp){
-                RenderMenu(window);
-            }else{
-                RenderGame(window);
-            }
+        //Update
+        Update(window);
+        //Render
+        if(manuUp){
+            RenderMenu(window);
+        }else{
+            RenderGame(window);
         }
     }
 }
@@ -50,10 +50,10 @@ void Game::Update(sf::RenderWindow& window){ //potem usunac parametr
             manuUp = true;
         }
 
-        if(!userTurn){
-            PcTurn();
-        }else{
+        if(userTurn){
             UserTurn();
+        }else{
+            PcTurn();
         }
     }
 }
@@ -110,28 +110,31 @@ void Game::UserTurn(){
         enemyhp-=dmg;
         cout<<"Player"<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
         UnitsTab[activePc]->SetHp(enemyhp);
-
+        userTurn=false;
     }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)){
         //heal/overheal
         UnitsTab[activeUser]->SetHp(myhp+2);
         cout<<"Player"<<UnitsTab[activeUser]->GetHp()<<" "; //do wywalenia
-
+        userTurn=false;
     }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)){   //hold
         //changeunit
-        cout<<"1-3 ";
+        //cout<<"1-3 ";
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num1)){
             activeUser=1;
             cout<<activeUser<<" ";
+            userTurn=false;
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num2)){
             activeUser=2;
             cout<<activeUser<<" ";
+            userTurn=false;
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Num3)){
             activeUser=3;
             cout<<activeUser<<" ";
+            userTurn=false;
         }
 
     }
-    userTurn=false;
+
 }
 
 void Game::PcTurn(){
@@ -153,7 +156,7 @@ void Game::PcTurn(){
         //heal
         UnitsTab[activePc]->SetHp(myhp+3);
         cout<<"Pc"<<UnitsTab[activePc]->GetHp()<<" "; //do wywalenia
-
+        userTurn = true;
     }else{
         //attack
         float dmg=4;
@@ -167,6 +170,7 @@ void Game::PcTurn(){
         enemyhp-=dmg;
         cout<<"Pc"<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
         UnitsTab[activeUser]->SetHp(enemyhp);
+        userTurn = true;
     }
     cout<<action<<" "<<unit<<"\n";
     //changeuit
@@ -179,9 +183,8 @@ void Game::PcTurn(){
         }else{
 
         }
+        userTurn = true;
     }
-
-    userTurn = true;
 }
 
 double Game::Decide(double a, double b){
