@@ -9,6 +9,8 @@
 #include <vector>
 #include <iostream>
 #include <string>
+#include <random>
+
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
 #include "SFML/System.hpp"
@@ -46,7 +48,7 @@ private:
 
     void UserTurn();
     void PcTurn();
-
+    static double Decide(double a,double b);
 };
 
 

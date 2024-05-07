@@ -28,16 +28,12 @@ void Game::GameLoop() {
 
             //Update
             Update(window);
-
             //Render
             if(manuUp){
-               RenderMenu(window);
+                RenderMenu(window);
             }else{
                 RenderGame(window);
             }
-
-
-
         }
     }
 }
@@ -54,13 +50,11 @@ void Game::Update(sf::RenderWindow& window){ //potem usunac parametr
             manuUp = true;
         }
 
-        if(userTurn){
-            UserTurn();
-        }else{
+        if(!userTurn){
             PcTurn();
+        }else{
+            UserTurn();
         }
-
-//
     }
 }
 
@@ -114,14 +108,14 @@ void Game::UserTurn(){
 
         }
         enemyhp-=dmg;
-        cout<<" "<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
+        cout<<"Player"<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
         UnitsTab[activePc]->SetHp(enemyhp);
-        userTurn=false;
+
     }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::W)){
         //heal/overheal
         UnitsTab[activeUser]->SetHp(myhp+2);
-        cout<<" "<<UnitsTab[activeUser]->GetHp()<<" "; //do wywalenia
-        userTurn=false;
+        cout<<"Player"<<UnitsTab[activeUser]->GetHp()<<" "; //do wywalenia
+
     }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::E)){   //hold
         //changeunit
         cout<<"1-3 ";
@@ -135,17 +129,64 @@ void Game::UserTurn(){
             activeUser=3;
             cout<<activeUser<<" ";
         }
-        userTurn=false;
+
     }
+    userTurn=false;
 }
 
 void Game::PcTurn(){
+    float myhp = UnitsTab[activePc]->GetHp();
+    float enemyhp = UnitsTab[activeUser]->GetHp();
+    float dmgmulti = UnitsTab[activePc]->GetDmgMulti();
+    string myname = UnitsTab[activePc]->getName();
+    string enemyname = UnitsTab[activeUser]->getName();
     //action
+    double border = 25.0;
+    double action = Decide(1.0,101.0);
+    double unit = int(Decide(1.0,4.0));
+    int i=0;
+    if(myhp<10){
+        border+=25.0;
+    }
 
-    //attack
+    if(action<=border){
+        //heal
+        UnitsTab[activePc]->SetHp(myhp+3);
+        cout<<"Pc"<<UnitsTab[activePc]->GetHp()<<" "; //do wywalenia
 
-    //heal
+    }else{
+        //attack
+        float dmg=4;
+        if((myname == "Saber" && enemyname=="Lancer") or (myname == "Lancer" && enemyname=="Archer") or (myname == "Archer" && enemyname=="Saber")){
+            dmg = dmg + (dmg * dmgmulti);
+        }else if((myname == "Lancer" && enemyname=="Saber")or(myname == "Archer" && enemyname=="Lancer")or(myname == "Saber" && enemyname=="Archer")) {
+            dmg = dmg - (dmg * dmgmulti);
+        }else{
 
-    //changeunit
+        }
+        enemyhp-=dmg;
+        cout<<"Pc"<<myname<<enemyname<<enemyhp<<" ";  //do wywalenia
+        UnitsTab[activeUser]->SetHp(enemyhp);
+    }
+    cout<<action<<" "<<unit<<"\n";
+    //changeuit
+    if(myhp<=0){
+        i+=1;
+        if(unit==1){
+            //UnitsTab[activePc];
+        }else if(unit==2){
+
+        }else{
+
+        }
+    }
+
     userTurn = true;
+}
+
+double Game::Decide(double a, double b){
+    random_device random_device;
+    mt19937 random_engine{random_device()};
+    uniform_real_distribution distribution{a,b};
+    return distribution(random_engine);
 }
