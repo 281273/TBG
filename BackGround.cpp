@@ -11,11 +11,12 @@ void BackGround::LoadTexture(const string& filename){
     }
 }
 
-void BackGround::draw(sf::RenderWindow& window) const {
-    window.draw(sprite);
-}
-
 void BackGround::Init(){
     sprite.setTexture(texture);
     sprite.setPosition(0, 0);
 }
+
+void BackGround::draw(sf::RenderWindow& window) const {
+    window.draw(sprite);
+}
+

@@ -12,6 +12,7 @@
 #include <random>
 
 #include "SFML/Graphics.hpp"
+#include <SFML/System/Clock.hpp>
 #include "SFML/Window.hpp"
 #include "SFML/System.hpp"
 #include "SFML/Audio.hpp"
@@ -20,6 +21,7 @@
 #include "Unit.h"
 #include "PcUnit.h"
 #include "UserUnit.h"
+#include "Font.h"
 
 using namespace std;
 
@@ -34,7 +36,6 @@ private:
 //    UserUnit& user; PcUnit& pc;
     sf::Vector2i mousePosWindow;
     void UpadateMousePosition(sf::RenderWindow& window);
-
     void Update(sf::RenderWindow& window);
     void RenderMenu(sf::RenderWindow& window);
     void RenderGame(sf::RenderWindow& window);
@@ -47,8 +48,8 @@ private:
     bool userTurn;
     bool manuUp;
     bool over;
-    void UserTurn();
-    void PcTurn();
+    void UserTurn(sf::RenderWindow& window);
+    void PcTurn(sf::RenderWindow& window);
     static double Decide(double a,double b);
 };
 

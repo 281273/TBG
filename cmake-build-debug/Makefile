@@ -152,6 +152,30 @@ BackGround.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/BackGround.cpp.s
 .PHONY : BackGround.cpp.s
 
+Font.obj: Font.cpp.obj
+.PHONY : Font.obj
+
+# target to build an object file
+Font.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Font.cpp.obj
+.PHONY : Font.cpp.obj
+
+Font.i: Font.cpp.i
+.PHONY : Font.i
+
+# target to preprocess a source file
+Font.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Font.cpp.i
+.PHONY : Font.cpp.i
+
+Font.s: Font.cpp.s
+.PHONY : Font.s
+
+# target to generate assembly for a file
+Font.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Font.cpp.s
+.PHONY : Font.cpp.s
+
 Game.obj: Game.cpp.obj
 .PHONY : Game.obj
 
@@ -284,6 +308,9 @@ help:
 	@echo ... BackGround.obj
 	@echo ... BackGround.i
 	@echo ... BackGround.s
+	@echo ... Font.obj
+	@echo ... Font.i
+	@echo ... Font.s
 	@echo ... Game.obj
 	@echo ... Game.i
 	@echo ... Game.s

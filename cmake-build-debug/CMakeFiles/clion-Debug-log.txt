@@ -9,6 +9,6 @@ CMake Deprecation Warning:
 
 
 -- Found SFML 2.6.1 in C:/Program Files/JetBrains/SFML-2.6.1/lib/cmake/SFML
--- Configuring done (0.1s)
--- Generating done (0.0s)
+-- Configuring done (0.6s)
+-- Generating done (0.1s)
 -- Build files have been written to: D:/Code/C++Projects/TBG/cmake-build-debug

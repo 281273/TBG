@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TBG.dir/BackGround.cpp.obj"
   "CMakeFiles/TBG.dir/BackGround.cpp.obj.d"
+  "CMakeFiles/TBG.dir/Font.cpp.obj"
+  "CMakeFiles/TBG.dir/Font.cpp.obj.d"
   "CMakeFiles/TBG.dir/Game.cpp.obj"
   "CMakeFiles/TBG.dir/Game.cpp.obj.d"
   "CMakeFiles/TBG.dir/PcUnit.cpp.obj"

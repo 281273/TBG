@@ -92,6 +92,12 @@
 		<Unit filename="D:/Code/C++Projects/TBG/BackGround.h">
 			<Option target="TBG"/>
 		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/Font.cpp">
+			<Option target="TBG"/>
+		</Unit>
+		<Unit filename="D:/Code/C++Projects/TBG/Font.h">
+			<Option target="TBG"/>
+		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/Game.cpp">
 			<Option target="TBG"/>
 		</Unit>

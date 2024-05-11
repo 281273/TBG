@@ -16,6 +16,7 @@ add_executable(TBG main.cpp
         UserUnit.cpp
         PcUnit.cpp
         BackGround.cpp
+        Font.cpp
 )
 
 target_link_libraries(TBG sfml-graphics)

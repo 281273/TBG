@@ -13,6 +13,7 @@ Game::Game(){
 
 void Game::GameLoop() {
     //Ini
+    //sf::Time second = sf::seconds(0.5);   //sekundy
 
     sf::RenderWindow window(sf::VideoMode(1050,540),"Turn-Based Game");
     window.setFramerateLimit(120);
@@ -55,9 +56,9 @@ void Game::Update(sf::RenderWindow& window){ //potem usunac parametr
         }
 
         if(userTurn){
-            UserTurn();
+            UserTurn(window);
         }else{
-            PcTurn();
+            PcTurn(window);
         }
     }
 }
@@ -71,17 +72,30 @@ void Game::RenderMenu(sf::RenderWindow& window){
     window.clear(sf::Color::Blue);
     //Draw here
     BackGround("MENU").draw(window);
+    Font("Press Space",200,200).draw(window);
 //    UnitsTab[activePc]->draw(window);
 //    UnitsTab[activeUser]->draw(window);
     window.display();
 }
 
 void Game::RenderGame(sf::RenderWindow& window){
+    float myhp = UnitsTab[activeUser]->GetHp();
+    float enemyhp = UnitsTab[activePc]->GetHp();
+    string myname = UnitsTab[activeUser]->getName();
+    string enemyname = UnitsTab[activePc]->getName();
+
     window.clear(sf::Color::Blue);
+
     //Draw here
     BackGround("BG").draw(window);
+
     UnitsTab[activePc]->draw(window);
+    string playerinfo = (myname+"\n"+to_string(int(myhp)));
+    Font(playerinfo,240, 430).draw(window);
+
     UnitsTab[activeUser]->draw(window);
+    string enemyinfo = (enemyname+"\n"+to_string(int(enemyhp)));
+    Font(enemyinfo,780, 290).draw(window);
 
     window.display();
 }
@@ -95,6 +109,13 @@ void Game::RenderOver(sf::RenderWindow& window){
     window.display();
 }
 
+//void Game::RenderText(sf::RenderTarget& target){
+//    Font().draw(target);
+//}
+
+
+
+
 void Game::CreateUnits(){
     UnitsTab.push_back(make_shared<UserUnit>("SABER"));     //0
     UnitsTab.push_back(make_shared<UserUnit>("LANCER"));    //1
@@ -104,8 +125,7 @@ void Game::CreateUnits(){
 }
 
 
-
-void Game::UserTurn(){
+void Game::UserTurn(sf::RenderWindow& window){
     float myhp = UnitsTab[activeUser]->GetHp();
     float enemyhp = UnitsTab[activePc]->GetHp();
     float dmgmulti = UnitsTab[activeUser]->GetDmgMulti();
@@ -174,7 +194,7 @@ void Game::UserTurn(){
 }
 
 
-void Game::PcTurn(){
+void Game::PcTurn(sf::RenderWindow& window){
     float myhp = UnitsTab[activePc]->GetHp();
     float enemyhp = UnitsTab[activeUser]->GetHp();
     float dmgmulti = UnitsTab[activePc]->GetDmgMulti();
