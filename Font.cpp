@@ -7,7 +7,7 @@ Font::Font(const std::string& content,float x,float y){
 }
 
 void Font::LoadFont(){
-    if(!font.loadFromFile("../font/ARCADECLASSIC.TTF")){
+    if(!font.loadFromFile("../font/prstart.ttf")){
         std::cerr << "Font error \n";
     }
 }

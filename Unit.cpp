@@ -1,6 +1,7 @@
 #include "Unit.h"
 
 Unit::Unit(const std::string& filename){
+    //Desides what stats unit have based on the type - filename  they are given
     if(filename=="SABER"){
         hp=20;
         dmgmulti=0.25;
@@ -19,6 +20,7 @@ Unit::Unit(const std::string& filename){
 
 Unit::~Unit()= default;
 
+//Loading the teture of the given unit type
 void Unit::LoadTexture(const std::string& filename){
     if (!texture.loadFromFile("../sprites/"+filename+".png")) {
         std::cerr << "Texture error player \n";
@@ -26,12 +28,14 @@ void Unit::LoadTexture(const std::string& filename){
     Init();
 }
 
+//Setting position of the unit png - different for User and Pc
 void Unit::Init(){
     sprite.setTexture(texture);
-    sprite.setOrigin(0,200);
+    sprite.setOrigin(0,0);
     sprite.setPosition(0, 0);
 }
 
+//Display
 void Unit::draw(sf::RenderWindow& window) const{
     window.draw(sprite);
 }

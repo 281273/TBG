@@ -6,8 +6,9 @@
 class UserUnit : public Unit {
 public:
     UserUnit(const std::string& filename);
-    void Init() override;
 
+    //Personal png position
+    void Init() override;
 private:
 
 };
