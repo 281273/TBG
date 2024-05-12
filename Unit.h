@@ -11,31 +11,29 @@
 #include "SFML/System.hpp"
 #include "SFML/Audio.hpp"
 
-using namespace std;
-
 class Unit {
 public:
-    float hp;
-    float dmgmulti;
-    string name;
+    Unit(const std::string& filename);
+    ~Unit();
 
-    sf::Texture texture;
-    sf::Sprite sprite;
-
-    void LoadTexture(const string& filename);
+    void LoadTexture(const std::string& filename);
     virtual void Init();
-//    virtual void SetStats(int typenum);
+
     void draw(sf::RenderWindow& window) const;
 
     float SetHp(float newhp);
     float GetHp() const;
     float GetDmgMulti() const;
-    const string &getName() const;
+    const std::string &getName() const;
 
-    Unit(const string& filename);
-    ~Unit();
-
+    sf::Texture texture;
+    sf::Sprite sprite;
 private:
+    float hp;
+    float dmgmulti;
+    std::string name;
+
+
 
 };
 

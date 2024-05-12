@@ -5,7 +5,7 @@
 
 class PcUnit : public Unit {
 public:
-    PcUnit(const string& filename);
+    PcUnit(const std::string& filename);
     void Init() override;
 private:
 

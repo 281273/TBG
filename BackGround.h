@@ -14,12 +14,12 @@ class BackGround {
 public:
     void LoadTexture(const string& filename);
     void draw(sf::RenderWindow& window) const;
-    void Init();
+    void Init(float x,float y);
 
     sf::Texture texture;
     sf::Sprite sprite;
 
-    BackGround(const string& filename);
+    BackGround(const string& filename,float x,float y);
 private:
 
 };

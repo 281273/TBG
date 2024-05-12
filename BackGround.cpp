@@ -1,8 +1,8 @@
 #include "BackGround.h"
 
-BackGround::BackGround(const string& filename){
+BackGround::BackGround(const string& filename,float x,float y){
     LoadTexture(filename);
-    Init();
+    Init(x,y);
 };
 
 void BackGround::LoadTexture(const string& filename){
@@ -11,9 +11,9 @@ void BackGround::LoadTexture(const string& filename){
     }
 }
 
-void BackGround::Init(){
+void BackGround::Init(float x,float y){
     sprite.setTexture(texture);
-    sprite.setPosition(0, 0);
+    sprite.setPosition(x, y);
 }
 
 void BackGround::draw(sf::RenderWindow& window) const {

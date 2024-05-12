@@ -313,4 +313,5 @@ CMakeFiles/TBG.dir/Game.cpp.obj: D:\Code\C++Projects\TBG\Game.cpp \
  C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileReader.hpp \
  C:/PROGRA~1/JETBRA~1/SFML-2~1.1/include/SFML/Audio/SoundFileWriter.hpp \
  D:\Code\C++Projects\TBG\BackGround.h D:\Code\C++Projects\TBG\Unit.h \
- D:\Code\C++Projects\TBG\PcUnit.h D:\Code\C++Projects\TBG\UserUnit.h
+ D:\Code\C++Projects\TBG\PcUnit.h D:\Code\C++Projects\TBG\UserUnit.h \
+ D:\Code\C++Projects\TBG\Font.h

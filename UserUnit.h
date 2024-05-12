@@ -5,7 +5,7 @@
 
 class UserUnit : public Unit {
 public:
-    UserUnit(const string& filename);
+    UserUnit(const std::string& filename);
     void Init() override;
 
 private:

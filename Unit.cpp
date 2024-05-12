@@ -1,11 +1,6 @@
 #include "Unit.h"
 
-//Model::Model(int points_,int level_){
-//    points=points_;
-//    level=level_;
-//}
-
-Unit::Unit(const string& filename){
+Unit::Unit(const std::string& filename){
     if(filename=="SABER"){
         hp=20;
         dmgmulti=0.25;
@@ -24,7 +19,7 @@ Unit::Unit(const string& filename){
 
 Unit::~Unit()= default;
 
-void Unit::LoadTexture(const string& filename){
+void Unit::LoadTexture(const std::string& filename){
     if (!texture.loadFromFile("../sprites/"+filename+".png")) {
         std::cerr << "Texture error player \n";
     }
@@ -54,7 +49,7 @@ float Unit::GetDmgMulti() const{
     return dmgmulti;
 }
 
-const string &Unit::getName() const {
+const std::string &Unit::getName() const {
     return name;
 }
 

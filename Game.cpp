@@ -50,7 +50,11 @@ void Game::Update(sf::RenderWindow& window){ //potem usunac parametr
     //Inputs
     if(manuUp and sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Space)){
         manuUp = false;
-    }else if (!manuUp) {
+    }
+    else if(manuUp and sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape)){
+        window.close();
+    }
+    else if (!manuUp) {
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Escape)) {
             manuUp = true;
         }
@@ -64,15 +68,15 @@ void Game::Update(sf::RenderWindow& window){ //potem usunac parametr
 }
 
 void Game::UpadateMousePosition(sf::RenderWindow& window){
-    //cout<<sf::Mouse::getPosition(window).x <<" "<<sf::Mouse::getPosition(window).y<<"\n";
+    cout<<sf::Mouse::getPosition(window).x <<" "<<sf::Mouse::getPosition(window).y<<"\n";
     mousePosWindow = sf::Mouse::getPosition(window);
 }
 
 void Game::RenderMenu(sf::RenderWindow& window){
     window.clear(sf::Color::Blue);
     //Draw here
-    BackGround("MENU").draw(window);
-    Font("Press Space",200,200).draw(window);
+    BackGround("MENU",0,0).draw(window);
+    Font("Press Space",450,440).draw(window);
 //    UnitsTab[activePc]->draw(window);
 //    UnitsTab[activeUser]->draw(window);
     window.display();
@@ -81,21 +85,22 @@ void Game::RenderMenu(sf::RenderWindow& window){
 void Game::RenderGame(sf::RenderWindow& window){
     float myhp = UnitsTab[activeUser]->GetHp();
     float enemyhp = UnitsTab[activePc]->GetHp();
-    string myname = UnitsTab[activeUser]->getName();
-    string enemyname = UnitsTab[activePc]->getName();
+    std::string myname = UnitsTab[activeUser]->getName();
+    std::string enemyname = UnitsTab[activePc]->getName();
 
     window.clear(sf::Color::Blue);
 
     //Draw here
-    BackGround("BG").draw(window);
+    BackGround("BG",0,0).draw(window);
+    BackGround("MANUAL",770,287).draw(window);
 
     UnitsTab[activePc]->draw(window);
-    string playerinfo = (myname+"\n"+to_string(int(myhp)));
-    Font(playerinfo,240, 430).draw(window);
+    std::string playerinfo = (myname+"\n\t "+to_string(int(myhp)));
+    Font(playerinfo,290, 260).draw(window);
 
     UnitsTab[activeUser]->draw(window);
-    string enemyinfo = (enemyname+"\n"+to_string(int(enemyhp)));
-    Font(enemyinfo,780, 290).draw(window);
+    std::string enemyinfo = (enemyname+"\n\t "+to_string(int(enemyhp)));
+    Font(enemyinfo,660, 110).draw(window);
 
     window.display();
 }
@@ -103,7 +108,7 @@ void Game::RenderGame(sf::RenderWindow& window){
 void Game::RenderOver(sf::RenderWindow& window){
     window.clear(sf::Color::Blue);
     //Draw here
-    BackGround("OVER").draw(window);
+    BackGround("OVER",0,0).draw(window);
 //    UnitsTab[activePc]->draw(window);
 //    UnitsTab[activeUser]->draw(window);
     window.display();
@@ -129,8 +134,8 @@ void Game::UserTurn(sf::RenderWindow& window){
     float myhp = UnitsTab[activeUser]->GetHp();
     float enemyhp = UnitsTab[activePc]->GetHp();
     float dmgmulti = UnitsTab[activeUser]->GetDmgMulti();
-    string myname = UnitsTab[activeUser]->getName();
-    string enemyname = UnitsTab[activePc]->getName();
+    std::string myname = UnitsTab[activeUser]->getName();
+    std::string enemyname = UnitsTab[activePc]->getName();
     int score=0;
 
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Q)){
@@ -198,8 +203,8 @@ void Game::PcTurn(sf::RenderWindow& window){
     float myhp = UnitsTab[activePc]->GetHp();
     float enemyhp = UnitsTab[activeUser]->GetHp();
     float dmgmulti = UnitsTab[activePc]->GetDmgMulti();
-    string myname = UnitsTab[activePc]->getName();
-    string enemyname = UnitsTab[activeUser]->getName();
+    std::string myname = UnitsTab[activePc]->getName();
+    std::string enemyname = UnitsTab[activeUser]->getName();
     //action
     double border = 25.0;
     double action = Decide(1.0,101.0);

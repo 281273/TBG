@@ -1,6 +1,6 @@
 #include "UserUnit.h"
 
-UserUnit::UserUnit(const string& filename): Unit(filename){
+UserUnit::UserUnit(const std::string& filename): Unit(filename){
     LoadTexture(filename);
 }
 

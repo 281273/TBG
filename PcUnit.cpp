@@ -1,7 +1,7 @@
 
 #include "PcUnit.h"
 
-PcUnit::PcUnit(const string& filename): Unit(filename){
+PcUnit::PcUnit(const std::string& filename): Unit(filename){
     LoadTexture(filename);
 }
 
