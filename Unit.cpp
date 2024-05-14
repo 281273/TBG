@@ -4,15 +4,15 @@ Unit::Unit(const std::string& filename){
     //Desides what stats unit have based on the type - filename  they are given
     if(filename=="SABER"){
         hp=20;
-        dmgmulti=0.25;
+        dmgmulti=1;
         name="Saber";
     } else if(filename=="LANCER"){
         hp=15;
-        dmgmulti=0.5;
+        dmgmulti=2;
         name="Lancer";
     } else if(filename=="ARCHER"){
         hp=10;
-        dmgmulti=0.75;
+        dmgmulti=3;
         name="Archer";
     }
     LoadTexture(filename);
@@ -40,16 +40,16 @@ void Unit::draw(sf::RenderWindow& window) const{
     window.draw(sprite);
 }
 
-float Unit::SetHp(float newhp){
+int Unit::SetHp(int newhp){
     hp=newhp;
     return hp;
 }
 
-float Unit::GetHp() const{
+int Unit::GetHp() const{
     return hp;
 }
 
-float Unit::GetDmgMulti() const{
+int Unit::GetDmgMulti() const{
     return dmgmulti;
 }
 

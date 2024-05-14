@@ -1,11 +1,18 @@
 #ifndef TBG_GAME_H
 #define TBG_GAME_H
 
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+
 #include <memory>
 #include <vector>
 #include <iostream>
 #include <string>
 #include <random>
+
 
 #include "SFML/Graphics.hpp"
 #include <SFML/System/Clock.hpp>
@@ -18,6 +25,7 @@
 #include "PcUnit.h"
 #include "UserUnit.h"
 #include "Font.h"
+
 
 class Game {
 public:
@@ -48,7 +56,7 @@ private:
     bool userTurn;
     bool manuUp;
     bool over;
-    float score;
+    int score;
 
     //Function generatind random numbers from a to b
     static double Decide(double a,double b);

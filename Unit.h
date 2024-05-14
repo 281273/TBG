@@ -14,7 +14,7 @@
 class Unit {
 public:
     Unit(const std::string& filename);
-    ~Unit();
+    virtual ~Unit();
 
     //Loading the texture , set its properties (different positions for User and Pc)
     void LoadTexture(const std::string& filename);
@@ -24,19 +24,19 @@ public:
     void draw(sf::RenderWindow& window) const;
 
     //Setters for Stats
-    float SetHp(float newhp);
+    int SetHp(int newhp);
 
     //Getters for unit stats
-    float GetHp() const;
-    float GetDmgMulti() const;
+    int GetHp() const;
+    int GetDmgMulti() const;
     const std::string &getName() const;
 
     sf::Texture texture;
     sf::Sprite sprite;
 private:
     //Stats of the Units
-    float hp;
-    float dmgmulti;
+    int hp;
+    int dmgmulti;
     std::string name;
 
 };
