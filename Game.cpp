@@ -109,12 +109,12 @@ void Game::RenderGame(sf::RenderWindow& window){
 
     //Displays Pc Unit png,  name and hp
     UnitsTab[activePc]->draw(window);
-    std::string playerinfo = (myname+": "+to_string(myhp));
+    std::string playerinfo = (myname+": "+std::to_string(myhp));
     Font(playerinfo,260, 280).draw(window);
 
     //Displays Player Unit png,  name and hp
     UnitsTab[activeUser]->draw(window);
-    std::string enemyinfo = (enemyname+": "+to_string(enemyhp));
+    std::string enemyinfo = (enemyname+": "+std::to_string(enemyhp));
     Font(enemyinfo,630, 130).draw(window);
 
     window.display();
@@ -138,17 +138,17 @@ void Game::RenderOver(sf::RenderWindow& window){
 
 //Adds playable Units to vector
 void Game::CreateUnits(){
-    UnitsTab.push_back(make_shared<UserUnit>("SABER"));         //0
-    UnitsTab.push_back(make_shared<UserUnit>("LANCER"));        //1
-    UnitsTab.push_back(make_shared<UserUnit>("ARCHER"));        //2
+    UnitsTab.push_back(std::make_shared<UserUnit>("SABER"));         //0
+    UnitsTab.push_back(std::make_shared<UserUnit>("LANCER"));        //1
+    UnitsTab.push_back(std::make_shared<UserUnit>("ARCHER"));        //2
 
-    UnitsTab.push_back(make_shared<PcUnit>("LANCER"));          //3
+    UnitsTab.push_back(std::make_shared<PcUnit>("LANCER"));          //3
 }
 
 double Game::Decide(double a, double b){
-    random_device random_device;
-    mt19937 random_engine{random_device()};
-    uniform_real_distribution distribution{a,b};
+    std::random_device random_device;
+    std::mt19937 random_engine{random_device()};
+    std::uniform_real_distribution distribution{a,b};
     return distribution(random_engine);
 }
 
@@ -267,11 +267,11 @@ void Game::PcTurn(sf::RenderWindow& window){
 
         //Bonus stats based on score
         if(unit==1){
-            UnitsTab.push_back(make_shared<PcUnit>("SABER"));
+            UnitsTab.push_back(std::make_shared<PcUnit>("SABER"));
         }else if(unit==2){
-            UnitsTab.push_back(make_shared<PcUnit>("LANCER"));
+            UnitsTab.push_back(std::make_shared<PcUnit>("LANCER"));
         }else{
-            UnitsTab.push_back(make_shared<PcUnit>("ARCHER"));
+            UnitsTab.push_back(std::make_shared<PcUnit>("ARCHER"));
         }
         int currPhp = UnitsTab[3]->GetHp();
         UnitsTab[3]->SetHp(currPhp+score);

@@ -1,12 +1,12 @@
 #include "BackGround.h"
 
-BackGround::BackGround(const string& filename,float x,float y){
+BackGround::BackGround(const std::string& filename,float x,float y){
     LoadTexture(filename);
     Init(x,y);
 };
 
 //Loading textures from files
-void BackGround::LoadTexture(const string& filename){
+void BackGround::LoadTexture(const std::string& filename){
     if (!texture.loadFromFile("../sprites/"+filename+".png")) {
         std::cerr << "Texture error player \n";
     }

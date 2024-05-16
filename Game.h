@@ -31,7 +31,7 @@ class Game {
 public:
     Game();
 
-    vector <shared_ptr<Unit>> UnitsTab;
+    std::vector <std::shared_ptr<Unit>> UnitsTab;
     void GameLoop();
 private:
     //Mouse position variable
