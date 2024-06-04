@@ -13,7 +13,7 @@
 
 class Unit {
 public:
-    Unit(const std::string& filename);
+    explicit Unit(const std::string& filename);
     virtual ~Unit();
 
     //Loading the texture , set its properties (different positions for User and Pc)
@@ -29,7 +29,7 @@ public:
     //Getters for unit stats
     int GetHp() const;
     int GetDmgMulti() const;
-    const std::string &getName() const;
+    std::basic_string<char> getName() const;
 
     sf::Texture texture;
     sf::Sprite sprite;

@@ -7,7 +7,7 @@ class PcUnit : public Unit {
 public:
     PcUnit(const std::string& filename);
 
-    //Personal position etc for Player png
+    //Personal position etc, for Player png
     void Init() override;
 private:
 

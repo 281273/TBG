@@ -13,15 +13,14 @@
 class Font {
 public:
     Font(const std::string& content,float x,float y);
+    void draw(sf::RenderTarget& target) const;
 
+private:
     sf::Font font;
     sf::Text text;
 
     void LoadFont();
     void Init(const std::string& content,float x,float y);
-    void draw(sf::RenderTarget& target) const;
-private:
-
 };
 
 

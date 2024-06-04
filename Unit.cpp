@@ -53,7 +53,7 @@ int Unit::GetDmgMulti() const{
     return dmgmulti;
 }
 
-const std::string &Unit::getName() const {
+std::basic_string<char> Unit::getName() const {
     return name;
 }
 

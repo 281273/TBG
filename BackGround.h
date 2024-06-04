@@ -14,14 +14,14 @@ public:
     BackGround(const std::string& filename,float x,float y);
 
     //Function responsible for loading textures to the given frame , drawing them on the screen, setting their properties
-    void LoadTexture(const std::string& filename);
     void draw(sf::RenderWindow& window) const;
-    void Init(float x,float y);
 
+private:
     sf::Texture texture;
     sf::Sprite sprite;
-private:
 
+    void LoadTexture(const std::string& filename);
+    void Init(float x,float y);
 };
 
 

@@ -30,10 +30,12 @@
 class Game {
 public:
     Game();
-
-    std::vector <std::shared_ptr<Unit>> UnitsTab;
     void GameLoop();
+
 private:
+    //Vector containing playable units
+    std::vector <std::shared_ptr<Unit>> UnitsTab;
+
     //Mouse position variable
     sf::Vector2i mousePosWindow;
 
