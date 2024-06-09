@@ -5,9 +5,10 @@
 
 class PcUnit : public Unit {
 public:
+//    A constructor
     PcUnit(const std::string& filename);
 
-    //Personal position etc, for Player png
+//    Function "Init" overriting the base Init function
     void Init() override;
 private:
 

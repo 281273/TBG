@@ -5,9 +5,10 @@
 
 class UserUnit : public Unit {
 public:
+//    A constructor
     UserUnit(const std::string& filename);
 
-    //Personal png position
+//    Function "Init" overriting the base Init function
     void Init() override;
 private:
 
