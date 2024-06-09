@@ -1,6 +1,7 @@
 # Turn-based game
 > It's a simple pokemon-like game.
-![image](https://user-images.githubusercontent.com/281273/TBG/docs/Screenshot.png)
+![solarized palette](https://github.com/281273/TBG/raw/main/docs/Screenshot.png)
+
 
 ## Table of Contents
 * [General Info](#general-information)
