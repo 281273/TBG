@@ -14,35 +14,34 @@
 * [Contact](#contact)
 
 ## General Information
-- Simple console game using a few keys.
-- Created in association with Allaris sp.z.o.o
+- Simple window turn-based game
+- Played on keyboard
+- PvE
 
 ## Technologies Used
 - C++ 17
-- Brain power
+- SFML 2.6.1
+- Clion 2023.3.4
+- Cmake 3.27
 
+## Setup
+- Just open the exe file
+- For modding make sure u use the proper versions listed above
 
 ## Features
 List the ready features here:
-- Working console application
-- Beautifull Unreal engine 5 graphics
-
-## Setup
-- You will need at least 64GB or Ram and 100GB of free Disk space
-- Win 12 is also reccomended
-
-- these high demands have one advantage : Absolutely no installation process. Just open it to play!
-
+- Working window application
+- Keyboard support
 
 ## Usage
-- Train your fingers to clear those 10-star maps.
-
+- Entertainment
 
 ## Project Status
-Project is: As good as it gets.
+- Finished project
+- Open for modding and updates
 
 To do:
-- Clear the screen so you don't have to scroll more then on instagram.
+- Add music
 
 ## Contact
 Created by Me. 
