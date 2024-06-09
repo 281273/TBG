@@ -39,6 +39,7 @@
 List the ready features here:
 - Working window application
 - Keyboard support
+- Windows, Unix support
 
 ## Usage
 - Entertainment
