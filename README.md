@@ -1,6 +1,11 @@
 # Turn-based game
 > It's a simple pokemon-like game.
-![solarized palette](https://github.com/281273/TBG/raw/main/docs/Screenshot.png)
+![image](https://github.com/281273/TBG/raw/main/docs/Screenshot.png)
+
+## What's New!
+- New Unit Textures!
+- v.1.0.13
+  - Bugfix: Controlls
 
 
 ## Table of Contents
