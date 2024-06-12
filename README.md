@@ -1,5 +1,12 @@
 # Turn-based game
 > It's a simple pokemon-like game.
+![image](https://github.com/281273/TBG/raw/main/docs/Screenshot.png)
+
+## What's New!
+- New Unit Textures!
+- v.1.0.13
+  - Bugfix: Controlls
+
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -32,6 +39,7 @@
 List the ready features here:
 - Working window application
 - Keyboard support
+- Windows, Unix support
 
 ## Usage
 - Entertainment
