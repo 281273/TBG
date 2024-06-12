@@ -10,13 +10,13 @@ ENDIF()
 
 find_package(SFML 2.6 COMPONENTS graphics audio window REQUIRED)
 
-add_executable(TBG main.cpp
-        Unit.cpp
-        Game.cpp
-        UserUnit.cpp
-        PcUnit.cpp
-        BackGround.cpp
-        Font.cpp
+add_executable(TBG resources/main.cpp
+        resources/Unit.cpp
+        resources/Game.cpp
+        resources/UserUnit.cpp
+        resources/PcUnit.cpp
+        resources/BackGround.cpp
+        resources/Font.cpp
 )
 
 target_link_libraries(TBG sfml-graphics)

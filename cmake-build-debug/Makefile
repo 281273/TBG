@@ -128,173 +128,173 @@ TBG/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/build
 .PHONY : TBG/fast
 
-BackGround.obj: BackGround.cpp.obj
-.PHONY : BackGround.obj
+resources/BackGround.obj: resources/BackGround.cpp.obj
+.PHONY : resources/BackGround.obj
 
 # target to build an object file
-BackGround.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/BackGround.cpp.obj
-.PHONY : BackGround.cpp.obj
+resources/BackGround.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/BackGround.cpp.obj
+.PHONY : resources/BackGround.cpp.obj
 
-BackGround.i: BackGround.cpp.i
-.PHONY : BackGround.i
+resources/BackGround.i: resources/BackGround.cpp.i
+.PHONY : resources/BackGround.i
 
 # target to preprocess a source file
-BackGround.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/BackGround.cpp.i
-.PHONY : BackGround.cpp.i
+resources/BackGround.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/BackGround.cpp.i
+.PHONY : resources/BackGround.cpp.i
 
-BackGround.s: BackGround.cpp.s
-.PHONY : BackGround.s
+resources/BackGround.s: resources/BackGround.cpp.s
+.PHONY : resources/BackGround.s
 
 # target to generate assembly for a file
-BackGround.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/BackGround.cpp.s
-.PHONY : BackGround.cpp.s
+resources/BackGround.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/BackGround.cpp.s
+.PHONY : resources/BackGround.cpp.s
 
-Font.obj: Font.cpp.obj
-.PHONY : Font.obj
+resources/Font.obj: resources/Font.cpp.obj
+.PHONY : resources/Font.obj
 
 # target to build an object file
-Font.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Font.cpp.obj
-.PHONY : Font.cpp.obj
+resources/Font.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Font.cpp.obj
+.PHONY : resources/Font.cpp.obj
 
-Font.i: Font.cpp.i
-.PHONY : Font.i
+resources/Font.i: resources/Font.cpp.i
+.PHONY : resources/Font.i
 
 # target to preprocess a source file
-Font.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Font.cpp.i
-.PHONY : Font.cpp.i
+resources/Font.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Font.cpp.i
+.PHONY : resources/Font.cpp.i
 
-Font.s: Font.cpp.s
-.PHONY : Font.s
+resources/Font.s: resources/Font.cpp.s
+.PHONY : resources/Font.s
 
 # target to generate assembly for a file
-Font.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Font.cpp.s
-.PHONY : Font.cpp.s
+resources/Font.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Font.cpp.s
+.PHONY : resources/Font.cpp.s
 
-Game.obj: Game.cpp.obj
-.PHONY : Game.obj
+resources/Game.obj: resources/Game.cpp.obj
+.PHONY : resources/Game.obj
 
 # target to build an object file
-Game.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Game.cpp.obj
-.PHONY : Game.cpp.obj
+resources/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Game.cpp.obj
+.PHONY : resources/Game.cpp.obj
 
-Game.i: Game.cpp.i
-.PHONY : Game.i
+resources/Game.i: resources/Game.cpp.i
+.PHONY : resources/Game.i
 
 # target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Game.cpp.i
-.PHONY : Game.cpp.i
+resources/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Game.cpp.i
+.PHONY : resources/Game.cpp.i
 
-Game.s: Game.cpp.s
-.PHONY : Game.s
+resources/Game.s: resources/Game.cpp.s
+.PHONY : resources/Game.s
 
 # target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Game.cpp.s
-.PHONY : Game.cpp.s
+resources/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Game.cpp.s
+.PHONY : resources/Game.cpp.s
 
-PcUnit.obj: PcUnit.cpp.obj
-.PHONY : PcUnit.obj
+resources/PcUnit.obj: resources/PcUnit.cpp.obj
+.PHONY : resources/PcUnit.obj
 
 # target to build an object file
-PcUnit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/PcUnit.cpp.obj
-.PHONY : PcUnit.cpp.obj
+resources/PcUnit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/PcUnit.cpp.obj
+.PHONY : resources/PcUnit.cpp.obj
 
-PcUnit.i: PcUnit.cpp.i
-.PHONY : PcUnit.i
+resources/PcUnit.i: resources/PcUnit.cpp.i
+.PHONY : resources/PcUnit.i
 
 # target to preprocess a source file
-PcUnit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/PcUnit.cpp.i
-.PHONY : PcUnit.cpp.i
+resources/PcUnit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/PcUnit.cpp.i
+.PHONY : resources/PcUnit.cpp.i
 
-PcUnit.s: PcUnit.cpp.s
-.PHONY : PcUnit.s
+resources/PcUnit.s: resources/PcUnit.cpp.s
+.PHONY : resources/PcUnit.s
 
 # target to generate assembly for a file
-PcUnit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/PcUnit.cpp.s
-.PHONY : PcUnit.cpp.s
+resources/PcUnit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/PcUnit.cpp.s
+.PHONY : resources/PcUnit.cpp.s
 
-Unit.obj: Unit.cpp.obj
-.PHONY : Unit.obj
+resources/Unit.obj: resources/Unit.cpp.obj
+.PHONY : resources/Unit.obj
 
 # target to build an object file
-Unit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Unit.cpp.obj
-.PHONY : Unit.cpp.obj
+resources/Unit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Unit.cpp.obj
+.PHONY : resources/Unit.cpp.obj
 
-Unit.i: Unit.cpp.i
-.PHONY : Unit.i
+resources/Unit.i: resources/Unit.cpp.i
+.PHONY : resources/Unit.i
 
 # target to preprocess a source file
-Unit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Unit.cpp.i
-.PHONY : Unit.cpp.i
+resources/Unit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Unit.cpp.i
+.PHONY : resources/Unit.cpp.i
 
-Unit.s: Unit.cpp.s
-.PHONY : Unit.s
+resources/Unit.s: resources/Unit.cpp.s
+.PHONY : resources/Unit.s
 
 # target to generate assembly for a file
-Unit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/Unit.cpp.s
-.PHONY : Unit.cpp.s
+resources/Unit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/Unit.cpp.s
+.PHONY : resources/Unit.cpp.s
 
-UserUnit.obj: UserUnit.cpp.obj
-.PHONY : UserUnit.obj
+resources/UserUnit.obj: resources/UserUnit.cpp.obj
+.PHONY : resources/UserUnit.obj
 
 # target to build an object file
-UserUnit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/UserUnit.cpp.obj
-.PHONY : UserUnit.cpp.obj
+resources/UserUnit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/UserUnit.cpp.obj
+.PHONY : resources/UserUnit.cpp.obj
 
-UserUnit.i: UserUnit.cpp.i
-.PHONY : UserUnit.i
+resources/UserUnit.i: resources/UserUnit.cpp.i
+.PHONY : resources/UserUnit.i
 
 # target to preprocess a source file
-UserUnit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/UserUnit.cpp.i
-.PHONY : UserUnit.cpp.i
+resources/UserUnit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/UserUnit.cpp.i
+.PHONY : resources/UserUnit.cpp.i
 
-UserUnit.s: UserUnit.cpp.s
-.PHONY : UserUnit.s
+resources/UserUnit.s: resources/UserUnit.cpp.s
+.PHONY : resources/UserUnit.s
 
 # target to generate assembly for a file
-UserUnit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/UserUnit.cpp.s
-.PHONY : UserUnit.cpp.s
+resources/UserUnit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/UserUnit.cpp.s
+.PHONY : resources/UserUnit.cpp.s
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+resources/main.obj: resources/main.cpp.obj
+.PHONY : resources/main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+resources/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/main.cpp.obj
+.PHONY : resources/main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+resources/main.i: resources/main.cpp.i
+.PHONY : resources/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/main.cpp.i
-.PHONY : main.cpp.i
+resources/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/main.cpp.i
+.PHONY : resources/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+resources/main.s: resources/main.cpp.s
+.PHONY : resources/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/main.cpp.s
-.PHONY : main.cpp.s
+resources/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TBG.dir\build.make CMakeFiles/TBG.dir/resources/main.cpp.s
+.PHONY : resources/main.cpp.s
 
 # Help Target
 help:
@@ -305,27 +305,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... TBG
-	@echo ... BackGround.obj
-	@echo ... BackGround.i
-	@echo ... BackGround.s
-	@echo ... Font.obj
-	@echo ... Font.i
-	@echo ... Font.s
-	@echo ... Game.obj
-	@echo ... Game.i
-	@echo ... Game.s
-	@echo ... PcUnit.obj
-	@echo ... PcUnit.i
-	@echo ... PcUnit.s
-	@echo ... Unit.obj
-	@echo ... Unit.i
-	@echo ... Unit.s
-	@echo ... UserUnit.obj
-	@echo ... UserUnit.i
-	@echo ... UserUnit.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... resources/BackGround.obj
+	@echo ... resources/BackGround.i
+	@echo ... resources/BackGround.s
+	@echo ... resources/Font.obj
+	@echo ... resources/Font.i
+	@echo ... resources/Font.s
+	@echo ... resources/Game.obj
+	@echo ... resources/Game.i
+	@echo ... resources/Game.s
+	@echo ... resources/PcUnit.obj
+	@echo ... resources/PcUnit.i
+	@echo ... resources/PcUnit.s
+	@echo ... resources/Unit.obj
+	@echo ... resources/Unit.i
+	@echo ... resources/Unit.s
+	@echo ... resources/UserUnit.obj
+	@echo ... resources/UserUnit.i
+	@echo ... resources/UserUnit.s
+	@echo ... resources/main.obj
+	@echo ... resources/main.i
+	@echo ... resources/main.s
 .PHONY : help
 
 

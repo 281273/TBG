@@ -86,43 +86,43 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Code/C++Projects/TBG/BackGround.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/BackGround.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/BackGround.h">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/BackGround.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Font.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/Font.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Font.h">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/Font.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Game.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/Game.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Game.h">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/Game.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/PcUnit.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/PcUnit.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/PcUnit.h">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/PcUnit.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Unit.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/Unit.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/Unit.h">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/Unit.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/UserUnit.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/UserUnit.cpp">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/UserUnit.h">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/UserUnit.h">
 			<Option target="TBG"/>
 		</Unit>
-		<Unit filename="D:/Code/C++Projects/TBG/main.cpp">
+		<Unit filename="D:/Code/C++Projects/TBG/resources/main.cpp">
 			<Option target="TBG"/>
 		</Unit>
 		<Unit filename="D:/Code/C++Projects/TBG/CMakeLists.txt">
